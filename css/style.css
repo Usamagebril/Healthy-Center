@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+/*Button*/
+.btnuser{
+    background-color: #ffd103;
+    border: 2px solid #ffd103;
+    transition: all .1s linear;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.btnuser:hover{
+    background-color: #f3c600;
+    color: white;
+    border: 2px solid #f3c600;
+}
+
+/*Welcome Section and NavBar*/
+.navbar{
+    background: transparent!important;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 0;
+}
+.navbar-brand{color: white; font-family: 'Bree Serif', serif; font-size: x-large;}
+.navbar-brand:hover{color: white;}
+.navlink{color: white; margin-left: 40px; font-size: 18px;font-family: 'Acme', sans-serif;}
+
+.healthywelcome{
+    height: 100vh;
+    min-height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 0;
+}
+.healthywelcome .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+}
+.healthywelcome .slider-text {
+    height: 100vh;
+    min-height: 750px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.rowuser {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+/*Welcome Section and NavBar*/
+
+
+/*Services Section*/
+
+.service-wrap{
+    margin-top: -60px;
+    position: relative;
+}
+.align-items-stretch {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important;
+}
+.align-items-stretch .services{
+    font-family: 'Acme', sans-serif;
+}
+.align-items-stretch .services:hover{
+    background-color: #ffd103;
+    color: white !important;
+}
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.services-wrap .services {
+    padding: 25px;
+}
+.services {
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    margin-bottom: 30px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    -moz-box-shadow: 0 5px 25px -2px rgba(0,0,0,.06);
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+}
+.text-center {
+    text-align: center !important;
+    padding: 5px;
+}
+.services .icon {
+    margin-bottom: 8px;
+}
+.icon{
+    padding: 10px;
+}
+/*Services Section*/
+
+
+
+/*About Us Section*/
+.aboutusimg{
+    width: 550px; 
+    height:550px;
+}
+.textdiv{
+    text-align: left; 
+    font-family: 'Acme', sans-serif;
+}
+#AboutUsHeader{font-size: 70px;}
+.listAboutUs{font-family: 'Acme', sans-serif;}
+.listAboutUs1{ display: inline-block;}
+.listAboutUs2{ display: inline-block; margin-left: 40%;}
+
+.fade-up {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transition: translateY(10%);
+  transition: opacity 1s ease-in, -webkit-transform 700ms ease-in;
+  transition: opacity 1s ease-in, transform 700ms ease-in;
+  transition: opacity 1s ease-in, transform 700ms ease-in,
+    -webkit-transform 700ms ease-in;
+}
+  
+.fade-up.appear {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+/*About Us Section*/
+
+/*Our Services Section*/
+.serviceimg{width: 100%;}
+.service-card{
+    
+    -webkit-box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    -moz-box-shadow: 0 5px 25px -2px rgba(0,0,0,.06);
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    background-color: white;
+    transition: all .2s linear;
+}
+.service-card:hover{
+    background-color: #ffd103;
+    color: white;    
+    -webkit-box-shadow: 0 10px 30px -6px rgb(0, 0, 0,  0.548);
+    -moz-box-shadow: 0 10px 30px -6px rgba(0,0,0, 0.548);
+    box-shadow: 0 10px 30px -6px rgba(0, 0, 0, 0.548);
+}
+.service-text
+{
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Acme', sans-serif;
+}
+.btn-service{
+    border: 2px solid #ffd103;
+    background-color: white;
+    color: #ffd103;
+    margin-bottom: 5px;
+}
+
+
+/*Our Services Section*/
+
+
+/*Make Appointment Section*/
+.divMakeAppoint{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.738) , rgba(0, 0, 0, 0.738)) , url(../img/makeAppoint.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+    font-family: 'Acme', sans-serif;
+}
+.makeapprow{
+    padding: 75px;
+}
+.MakeAppTxt1{
+    color: #ffd103;
+}
+.MakeAppTxt2{
+    color: white;
+}
+
+/*Make Appointment Section*/
+
+
+/*Procedure Section*/
+.proimg{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 7px solid #fff;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.num{
+    width: 34px;
+    height: 34px;
+    background: #f3c600;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 3px;
+    color: white;
+}
+.btn-pro{
+    border: 1px solid #ffd103;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffd103;
+    margin-bottom: 5px;
+}
+.prodiv{
+    height: 800px; 
+    padding-top: 30px; 
+}
+.Proheader{padding-top: 50px;}
+.HowItWorksHeader{font-size: 60px;}
+
+/*Procedure Section*/
+
+
+/*Last Section*/
+.lastSection{
+    height: 600px;
+    background-image: linear-gradient(rgb(0,0,0,0.562),rgba(0, 0, 0, 0.562)) , url(../img/lastSection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: 'Acme', sans-serif;
+}
+.lastSectiontitle{
+    padding-top: 70px;
+    color: #f3c600;
+}
+
+.lastSectiontxt{
+    color: white;
+    font-size: 100px;
+}
+
+.btnlastSection{
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: all .1s linear;
+    color: #f3c600;
+    padding: 20px;
+    border-radius: 5px;
+    width: 167px;
+}
+.btnlastSection:hover{
+    background-color: #eee;
+    color: #f3c600;
+    border: 2px solid #eee;
+}
+
+/*Last Section*/
+
+
+/*Footer Section*/
+.footertitle{
+    color: white;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px;
+    font-family: 'Bree Serif', serif;
+}
+.site-footer
+{
+  background-color:#0f0f0f;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+  
+  font-family: 'Acme', sans-serif;
+}
+.site-footer hr
+{
+  border-top-color:#f3c600;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer .footerotitle
+{
+  color:#f3c600;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#f3c600;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#fff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#f3c600;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+/*Footer Section*/
+
+
+
+/*Monile View*/
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*About Us*/
+    #AboutUsHeader{font-size: 50px;}
+    .textdiv{
+        text-align: left; 
+        font-family: 'Acme', sans-serif;
+        font-size: small;
+    }
+    .aboutusimg{
+        width: 320px; 
+        height:320px;}
+    .listAboutUs1{ display: block;}
+    .listAboutUs2{ display: block; margin-left: 0%;}
+    /*About Us*/
+    /*Our  Services*/
+    .service-card{
+    
+        -webkit-box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+        -moz-box-shadow: 0 5px 25px -2px rgba(0,0,0,.06);
+        box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+        background-color: white;
+        transition: all .2s linear;
+        width: 100%;}
+    .service-big-card{width: 100%;}
+    .service-row-card{width: 350px;}
+    .service-container-card{width: 350px;}
+    /*Our  Services*/
+    /*Make Appointment*/
+    .MakeAppTxt1{
+        color: #ffd103;
+        font-size: small;
+    }
+    .MakeAppTxt2{
+        color: white;
+        font-size: medium;
+    }
+    .MakeAppTxtall{
+        display: inline-block;
+    }
+    .btnuser{
+        background-color: #ffd103;
+        border: 2px solid #ffd103;
+        transition: all .1s linear;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /*Make Appointment*/
+    /*Our Procedure*/
+    .prodiv{
+        
+    height: 1000px; 
+    padding-top: 30px; 
+    font-family: 'Acme', sans-serif;
+    }
+    /*Our Procedure*/
+    /*Last Section*/
+    .lastSectiontitle{
+        padding-top: 20px;
+        color: #f3c600;
+    }
+    .lastSectiontxt{
+        color: white;
+        font-size: 50px;
+    }
+    
+    .btnlastSection{
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        transition: all .1s linear;
+        color: #f3c600;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 653px) {
+    /* For mobile phones: */
+  }
